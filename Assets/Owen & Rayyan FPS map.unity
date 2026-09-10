@@ -716,7 +716,9 @@ Transform:
   m_LocalPosition: {x: -2.35, y: 1.029, z: -8.398}
   m_LocalScale: {x: 0.16485995, y: 0.16485995, z: 0.16485995}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1752121951}
+  - {fileID: 1871911241}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &722119832
@@ -2228,7 +2230,7 @@ GameObject:
   - component: {fileID: 1752121949}
   - component: {fileID: 1752121948}
   m_Layer: 0
-  m_Name: Lamp
+  m_Name: Lamp neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2322,12 +2324,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752121947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3508, y: 0.8812, z: -8.3942}
-  m_LocalScale: {x: 0.04132677, y: 0.0732021, z: 0.04132677}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.004853409, y: -0.89651865, z: 0.02304646}
+  m_LocalScale: {x: 0.25067803, y: 0.444026, z: 0.25067803}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 705506693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793527306
 GameObject:
@@ -2660,12 +2662,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871911237}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.353, y: 0.771, z: -8.39501}
-  m_LocalScale: {x: 0.11506163, y: 0.11506163, z: 0.11506163}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.018197391, y: -1.5649648, z: 0.018135205}
+  m_LocalScale: {x: 0.6979356, y: 0.6979356, z: 0.6979356}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 705506693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083910346
 GameObject:
@@ -2905,6 +2907,4 @@ SceneRoots:
   - {fileID: 1296682857}
   - {fileID: 1435087937}
   - {fileID: 995370360}
-  - {fileID: 1752121951}
-  - {fileID: 1871911241}
   - {fileID: 705506693}
