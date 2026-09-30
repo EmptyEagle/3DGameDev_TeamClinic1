@@ -19,7 +19,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (isAggro)
         {
@@ -53,7 +53,7 @@ public class EnemyFollowPlayer : MonoBehaviour
             // Move toward player
             Debug.Log("CAN MOVE TOWARD PLAYER");
             Vector3 directionToMove = -distanceToPlayer.normalized;
-            enemyRb.AddForce(directionToMove.x * enemySpeed, 0f, directionToMove.z * enemySpeed, ForceMode.Force);
+            enemyRb.AddForce(directionToMove.x * enemySpeed * 5f, 0f, directionToMove.z * enemySpeed * 5f, ForceMode.Force);
         }
         else
         {
