@@ -6,6 +6,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     public float enemySpeed;
     private Rigidbody enemyRb;
     private Vector3 distanceToPlayer;
+    private Vector3 directionToPlayer;
     [SerializeField] private float minDistanceToPlayer;
     private SphereCollider aggroRange;
     private bool isAggro;
@@ -47,18 +48,25 @@ public class EnemyFollowPlayer : MonoBehaviour
 
     void MoveTowardPlayer()
     {
+        // Rotate toward player when in range
+        directionToPlayer = player.transform.position - transform.position;
+        Quaternion newDirection = Quaternion.LookRotation(directionToPlayer, Vector3.up);
+        newDirection.x = 0;
+        newDirection.z = 0;
+        transform.rotation = newDirection;
+
+        // Move forward
         distanceToPlayer = transform.position - player.transform.position;
         if (distanceToPlayer.magnitude > minDistanceToPlayer)
         {
             // Move toward player
-            Debug.Log("CAN MOVE TOWARD PLAYER");
-            Vector3 directionToMove = -distanceToPlayer.normalized;
-            enemyRb.AddForce(directionToMove.x * enemySpeed * 5f, 0f, directionToMove.z * enemySpeed * 5f, ForceMode.Force);
+            //Debug.Log("CAN MOVE TOWARD PLAYER");
+            enemyRb.linearVelocity = transform.forward * enemySpeed * 10f * Time.deltaTime;
         }
         else
         {
             // Too close to player to move
-            Debug.Log("CANNOT MOVE TOWARD PLAYER");
+            //Debug.Log("CANNOT MOVE TOWARD PLAYER");
         }
     }
 }
