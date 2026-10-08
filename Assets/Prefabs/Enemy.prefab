@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 7439349294055504996}
   - component: {fileID: 5137960675846496429}
   - component: {fileID: 1130062718646105009}
+  - component: {fileID: -5873409032834501861}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -376,3 +377,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFire
   projectilePrefab: {fileID: 7948872279807765911, guid: 5182167c5b3bd53e0bc62f592cb99151, type: 3}
   enemyFireRate: 1
+--- !u!114 &-5873409032834501861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042669573961965362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef47e279a741dd53b5636239f338303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyRandomMovement
+  wanderSpeed: 4

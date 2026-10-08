@@ -24,5 +24,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         gameOverCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }
